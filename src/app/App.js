@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Home from '../home/Home';
+import DinosPage from '../dinos/DinosPage.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -26,9 +27,9 @@ class App extends Component {
                 )}
               />
 
-              <Route path="/resources" exact={true}
+              <Route path="/dinos" exact={true}
                 render={routerProps => (
-                  <div>Implement a page of resources</div>
+                  <DinosPage {...routerProps}/>
                 )}
               />
 

@@ -1,0 +1,28 @@
+.DinoItem {
+  list-style: none;
+  background: white;
+  border: 1px solid darkgray;
+  padding: 10px;
+
+  display: grid;
+  grid-template-rows: 30px 120px 20px;
+  grid-gap: 10px;
+
+  justify-items: center;
+
+}
+
+.DinoItem h2 {
+  margin: 0;
+}
+
+.DinoItem img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.DinoItem p {
+  margin: 0;
+  font-size: .9rem;
+}

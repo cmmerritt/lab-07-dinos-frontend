@@ -7,9 +7,12 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h2>Dino Home Page</h2>
-
-        <Link to='/dinos'>See the List</Link>
+        <header>
+          <h2>Dino Home Page</h2>
+        </header>
+        <p>
+          <Link to='/dinos'>See the List</Link>
+        </p>
       </div>
     );
   }
