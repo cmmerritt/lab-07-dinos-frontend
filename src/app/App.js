@@ -34,7 +34,7 @@ class App extends Component {
                 )}
               />
 
-              <Route path="/dinos/dino/:id"
+              <Route path="/dinos/:id"
                 render={routerProps => (
                   <DinoDetailPage {...routerProps}/>
                 )}
