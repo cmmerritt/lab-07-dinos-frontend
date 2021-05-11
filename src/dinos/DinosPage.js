@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import DinoList from './DinoList';
+import { getDinos } from '../utils/dinos-api.js';
 import './DinosPage.css';
 
 export default class DinosPage extends Component {
@@ -7,6 +8,15 @@ export default class DinosPage extends Component {
     dinos: []
   }
 
+  async componentDidMount() {
+    const dinos = await getDinos();
+    if (dinos) {
+      this.setState({ dinos: dinos });
+    }
+    else {
+      console.log('Clever girl! But no dinos here. Check the network tab. Or the paddock');
+    }
+  }
 
   render() {
     const { dinos } = this.state;
