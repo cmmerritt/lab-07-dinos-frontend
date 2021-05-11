@@ -13,11 +13,11 @@
 }
 
 .DinoItem h2 {
-  margin: 0;
+  margin: 5px;
 }
 
 .DinoItem img {
-  height: 100%;
+  height: 130px;
   width: 100%;
   object-fit: contain;
 }

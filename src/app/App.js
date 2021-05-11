@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from '../home/Home';
 import DinosPage from '../dinos/DinosPage.js';
+import DinoDetailPage from '../dino/DinoDetailPage.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -33,9 +34,9 @@ class App extends Component {
                 )}
               />
 
-              <Route path="/resources/:id"
+              <Route path="/dinos/dino/:id"
                 render={routerProps => (
-                  <div>Implement a page for id {routerProps.match.params.id}</div>
+                  <DinoDetailPage {...routerProps}/>
                 )}
               />
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './DinoItem.css';
 
 class DinoItem extends Component {
@@ -8,9 +9,11 @@ class DinoItem extends Component {
 
     return (
       <li className="DinoItem">
-        <h2>{dino.name}</h2>
-        <img src={dino.url} alt={dino.name}/>
-        <p>Lived during the {dino.era} Era</p>
+        <Link to={`dinos/dino/${dino.id}`}>
+          <h2>{dino.name}</h2>
+          <img src={dino.url} alt={dino.name}/>
+          <p>Lived during the {dino.era} Era</p>
+        </Link>
       </li>
     );
   }
