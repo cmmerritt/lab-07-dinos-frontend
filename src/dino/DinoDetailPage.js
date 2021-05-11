@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { getDinos } from '../utils/dinos-api.js';
+import { getDino } from '../utils/dinos-api.js';
 import './DinoDetailPage.css';
 
 export default class DinoDetailPage extends Component {
@@ -9,7 +9,7 @@ export default class DinoDetailPage extends Component {
 
   async componentDidMount() {
     const { match } = this.props;
-    const dino = await getDinos(match.params.id);
+    const dino = await getDino(match.params.id);
     if (dino) {
       this.setState({ dino: dino });
     }
@@ -21,7 +21,7 @@ export default class DinoDetailPage extends Component {
   render() {
 
     const { dino } = this.state;
-
+    console.log(dino);
     if (!dino) return null;
 
     return (

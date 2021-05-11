@@ -9,7 +9,7 @@ class DinoItem extends Component {
 
     return (
       <li className="DinoItem">
-        <Link to={`dinos/dino/${dino.id}`}>
+        <Link to={`dinos/${dino.id}`}>
           <h2>{dino.name}</h2>
           <img src={dino.url} alt={dino.name}/>
           <p>Lived during the {dino.era} Era</p>
