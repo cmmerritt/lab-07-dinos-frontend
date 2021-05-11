@@ -11,3 +11,8 @@ export async function getDino(id) {
   const response = await request.get(`${URL}/${id}`);
   return response.body;
 }
+
+export async function addDino(dino) {
+  const response = await request.post(URL).send(dino);
+  return response.body.id;
+}
