@@ -16,3 +16,8 @@ export async function addDino(dino) {
   const response = await request.post(URL).send(dino);
   return response.body;
 }
+
+export async function deleteDino(id) {
+  const response = await request.delete(`${URL}/${id}`);
+  return response.body;
+}
