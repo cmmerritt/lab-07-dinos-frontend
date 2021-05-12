@@ -1,2 +1,2 @@
-/api/*  https://ancient-gorge-15372.herokuapp.com/api/:splat
+/api/*  https://ancient-gorge-15372.herokuapp.com/api/:splat 200!
 /*    /index.html   200
