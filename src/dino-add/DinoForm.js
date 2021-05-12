@@ -14,7 +14,7 @@ export default class DinoForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.onEdit(this.state);
+    this.props.onSubmit(this.state);
   }
 
   handleChangeName = ({ target }) => {

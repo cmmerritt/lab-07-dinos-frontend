@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Home from '../home/Home';
 import DinosPage from '../dinos/DinosPage.js';
 import DinoDetailPage from '../dino/DinoDetailPage.js';
-import DinoEditPage from '../dino-edit/DinoEditPage.js';
+import DinoAddPage from '../dino-add/DinoAddPage.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -37,7 +37,7 @@ class App extends Component {
 
               <Route path="/dinos/add"
                 render={routerProps => (
-                  <DinoEditPage {...routerProps}/>
+                  <DinoAddPage {...routerProps}/>
                 )}
               />
 
